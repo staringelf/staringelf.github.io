@@ -24,8 +24,9 @@
 }
 
 body{
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: var(--fs-3);
+  position: relative;
 }
 
 @media screen and (max-width: 600px){
@@ -97,7 +98,7 @@ body{
     bottom: 0;
     left: 0px;
     right: 0px;
-    height: 60px;
+    height: 10vh;
     display: flex; 
     justify-content: space-between;
     background: #efefef;
@@ -109,10 +110,6 @@ body{
 
   .form .form__block + .form__block{
     margin-top: 10px;
-  }
-
-  .canvas_container{
-    margin: 2px 0 15px;
   }
 
   .form__font-family{
