@@ -338,7 +338,7 @@ const tabsView = {
     this.setUpEventListeners();
 	
 	octopus.updateSwitchFlow();
-	document.write(`<style>.switches__container{visibility: visible} @media(min-height: ${window.innerHeight - 10}px){.switches__container{visibility: hidden;}</style>`)
+	document.write(`<style>@media(min-height: ${window.innerHeight - 20}px){.switches__container{display: none}</style>`)
   },
 
   setUpEventListeners () {
