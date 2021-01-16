@@ -261,10 +261,10 @@ const contentView ={
 
     this.textInputs.forEach(textInput => textInput.oninput = octopus.updateText);
 
-    this.textInputs.forEach(textInput => textInput.onfocus = octopus.hideSwitchesView);
+   /* this.textInputs.forEach(textInput => textInput.onfocus = octopus.hideSwitchesView);
 
     this.textInputs.forEach(textInput => textInput.onblur = octopus.unhideSwitchesView);
-
+*/
     this.fileInput.onchange = octopus.updateImage;
 
     this.alignments.forEach(alignInput => alignInput.onchange = octopus.updateAlignment);
@@ -338,6 +338,7 @@ const tabsView = {
     this.setUpEventListeners();
 	
 	octopus.updateSwitchFlow();
+	document.write(`<style>.switches__container{visibility: visible} @media(min-height: ${window.innerHeight - 10}px){.switches__container{visibility: hidden;}</style>`)
   },
 
   setUpEventListeners () {
