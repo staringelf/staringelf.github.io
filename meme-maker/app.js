@@ -236,12 +236,13 @@ const octopus = {
 	   return model.switchFlow;
   },
   
-  stickySwitchFlow() {
-	model.switchFlow = 'sticky';
-	tabsView.render();
-	return model.switchFlow;	
+  hideSwitchesView () {
+	 tabsView.switchesContainer.classList.add('curtain');
   },
   
+  unhideSwitchesView () {
+	 tabsView.switchesContainer.classList.remove('curtain');  
+  }
 }
 
 const contentView ={
@@ -260,9 +261,9 @@ const contentView ={
 
     this.textInputs.forEach(textInput => textInput.oninput = octopus.updateText);
 
-    this.textInputs.forEach(textInput => textInput.onfocus = octopus.stickySwitchFlow);
+    this.textInputs.forEach(textInput => textInput.onfocus = octopus.hideSwitchesView);
 
-    this.textInputs.forEach(textInput => textInput.onblur = octopus.updateSwitchFlow);
+    this.textInputs.forEach(textInput => textInput.onblur = octopus.unhideSwitchesView);
 
     this.fileInput.onchange = octopus.updateImage;
 

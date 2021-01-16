@@ -43,10 +43,6 @@ body{
     right: 0;
   }
 
-  .curtain{
-    display: none;
-  }
-
   .darken{
     background-color: var(--clr-dark) !important;
   }
@@ -331,6 +327,12 @@ body{
   .form__grp--range input{
     width: 80px;
   }
+  
+  .curtain{
+    display: none;
+  }
+
+
 }
 
 @media screen and (max-width: 340px){
@@ -370,3 +372,4 @@ body{
   }
 
 }
+
