@@ -197,7 +197,7 @@ const octopus = {
         tab.classList.add('curtain');
       }
     });
-     model.switchFlow = document.body.getBoundingClientRect().height > screen.height ? 'sticky' : 'fixed';
+     model.switchFlow = document.body.getBoundingClientRect().height > window.innerHeight ? 'sticky' : 'fixed';
 
     tabsView.render();
   },
