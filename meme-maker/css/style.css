@@ -310,7 +310,7 @@ body{
     flex: 0 1 50%;
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 123px;
     font-weight: 600;
     justify-content: space-around;
     height: 28px;
@@ -322,6 +322,7 @@ body{
     display: inline-block;
     width: 60px;
     white-space: nowrap;
+	font-size: 13px;
   }
 
   .form__grp--range .form__block:nth-of-type(even) label,
