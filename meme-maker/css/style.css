@@ -225,7 +225,6 @@ body{
     border: 1.5px solid var(--clr-dark--fade);
     width: 80%;
     height: 125%;
-    z-index: 10;
   }
 
   .form__text:focus{
