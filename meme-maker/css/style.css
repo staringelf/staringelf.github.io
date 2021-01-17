@@ -41,7 +41,7 @@ body{
     top: 1vw;
     left: 0;
     right: 0;
-    /* z-index: 10; */
+    z-index: 2; 
     background-color: #fafafa;
     border-radius: 2px;
     width: 98%;
