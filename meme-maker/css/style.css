@@ -50,7 +50,7 @@ body{
   }
 
   #animation-canvas{
-    z-index: 10;
+    z-index: 9;
   }
 
   .darken{
