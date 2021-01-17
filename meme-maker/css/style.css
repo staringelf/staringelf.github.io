@@ -90,8 +90,6 @@ body{
     font-weight: 800;
     text-transform: uppercase;
     transform: scaleY(1.15);
-    position: relative;
-    right: 1%;
     z-index: 1000;
   }
 
