@@ -146,9 +146,9 @@ body{
 
   .form__font-family{
     display: flex;
-    overflow-x: scroll;
-    
+    overflow-x: scroll;  
   }
+
 
   .form__block--radio{
     position: relative;
@@ -157,7 +157,6 @@ body{
   .form__block--radio label{
     position: relative;
     display: inline-block;
-    width: 17px;
     height: 1.5px;
     background: #9a9a9a;
     cursor: pointer;
