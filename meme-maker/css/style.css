@@ -371,6 +371,9 @@ body{
     display: none;
   }
 
+  .static{
+    position: static;
+  }
 
 }
 

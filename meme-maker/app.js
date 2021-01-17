@@ -237,11 +237,13 @@ const octopus = {
   },
   
   hideSwitchesView () {
-	 tabsView.switchesContainer.classList.add('curtain');
+   tabsView.switchesContainer.classList.add('curtain');
+   canvasView.canvasContainer.classList.add('static');
   },
   
   unhideSwitchesView () {
-	 tabsView.switchesContainer.classList.remove('curtain');  
+	 tabsView.switchesContainer.classList.remove('curtain');
+   canvasView.canvasContainer.classList.remove('static');
   }
 }
 
@@ -358,6 +360,7 @@ const canvasView = {
     const CANVAS_HEIGHT = CANVAS_WIDTH;
     this.saveButton = document.querySelector('#save-btn');
     this.canvas = this.createCanvas(CANVAS_HEIGHT, CANVAS_WIDTH);
+    this.canvasContainer = document.querySelector('.canvas_container');
     this.setUpEventListeners();
   },
 
