@@ -354,7 +354,7 @@ const tabsView = {
 const canvasView = {
 
   init () {
-    const CANVAS_WIDTH = screen.width < 550 ? screen.width : 550;
+    const CANVAS_WIDTH = screen.width < 550 ? .99 * screen.width : 550;
     const CANVAS_HEIGHT = CANVAS_WIDTH;
     this.saveButton = document.querySelector('#save-btn');
     this.canvas = this.createCanvas(CANVAS_HEIGHT, CANVAS_WIDTH);

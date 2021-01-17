@@ -41,6 +41,16 @@ body{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
+    background-color: #fafafa;
+    border-radius: 2px;
+    width: 99%;
+    margin: 0 auto; 
+    padding-bottom: 0;
+  }
+
+  #animation-canvas{
+    z-index: 10;
   }
 
   .darken{
@@ -52,7 +62,18 @@ body{
   }
 
   .form__block--file{
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+  .form__file{
+    display: none;
+    position: relative;
+    height: 100%;
+    width: auto;
+    width: max-content;
+    font-size: 12px;
+    border: 1px solid var(--clr-black--fade);
   }
 
   .btn{
@@ -60,6 +81,23 @@ body{
     padding: 5px 12px;
     background: var(--clr-dark);
     color: var(--clr-light);
+  }
+
+  .btn--img{
+    background: #dfdfdf;
+    /* border: 2px solid #aaa; */
+    color: var(--clr-black--fade);
+    font-weight: 800;
+    text-transform: uppercase;
+    transform: scaleY(1.15);
+    position: relative;
+    right: 1%;
+    z-index: 1000;
+  }
+
+  .btn--save{
+    position: relative;
+    left: 1%;
   }
 
   .btn--switch{
