@@ -44,7 +44,7 @@ export default class Game {
                 paddleCharacterstics = {
                     width: this.width / 6,
                     height: 10,
-                    maxSpeed: 2 * this.width / 100
+                    maxSpeed:  this.width / 100
                 };
                 ballCharacterstics = {
                     radius: this.width > 750 ? .005 * this.width : 4.5,
@@ -53,14 +53,15 @@ export default class Game {
                 break;
             case ORIENTATION.PORTRAIT:
                 paddleCharacterstics = {
-                    width: this.width / 5,
+                    width: this.width / 4,
                     height: 6,
-                    maxSpeed: this.width / 100
+                    maxSpeed: 1.5 * this.height / 100
                 };
                 ballCharacterstics = {
                     radius: this.width > 750 ? .005 * this.width : 4.5,
-                    vel: {x: this.height / 300, y: this.height / 300} 
+                    vel: {x: height / 150, y: height / 150} 
                 }
+                break;
         }
         this.paddle = new Paddle(this, paddleCharacterstics);
         this.ball = new Ball(this, ballCharacterstics);
@@ -86,7 +87,6 @@ export default class Game {
         switch (this.orientation){
             case ORIENTATION.LANDSCAPE: 
                 this.wall = buildWall(this, patternsLandscape[`pattern${this.level}`]);
-                console.log(patternsLandscape[`pattern${this.level}`]);
                 break;
             case ORIENTATION.PORTRAIT:
                 this.wall = buildWall(this, patternsPortrait[`pattern${this.level}`]);
@@ -167,18 +167,19 @@ export default class Game {
     }
 
     getBrickDimensions () {
-        const brickDimensions = {width: 40, height: 10, margin: 10};
+        const brickDimensions = {width: 40, height: 10};
         switch (this.orientation) {
             case ORIENTATION.LANDSCAPE:
-                brickDimensions.width = (this.width - 100) / 15;
+                brickDimensions.width = (this.width - 10 * 10) / 15;
                 brickDimensions.height = this.height / 20;
                 brickDimensions.offsets = {top: 10, left: 2 * brickDimensions.width};
+                brickDimensions.margin = {x: 10, y: 15};
                 break;
             case ORIENTATION.PORTRAIT:
-                brickDimensions.width = (this.width - 6) / 9;
+                brickDimensions.width = (this.width - 6 * 3) / 9;
                 brickDimensions.height = this.height / 33;
                 brickDimensions.offsets = {top: 10, left: brickDimensions.width - 6};
-                brickDimensions.margin = 1;
+                brickDimensions.margin = {x: 3, y:  brickDimensions.height};
                 break;
         }
         return brickDimensions;

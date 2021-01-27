@@ -6,6 +6,8 @@ export default class Ball {
         this.gameWidth = game.width;
         this.gameHeight = game.height;
         this.position = {x: 12, y: 150};
+        this.initialVelX = characterstics.vel.x;
+        this.initialVelY = characterstics.vel.y;
         this.vel = characterstics.vel;
         this.speed = this.getSpeed();
         this.radius = characterstics.radius;
@@ -41,14 +43,17 @@ export default class Ball {
             const paddle = this.game.paddle;
                 const collisionPoint = this.position.x - (paddle.position.x + paddle.width / 2);
                 const collisionAngle = (collisionPoint / (paddle.width / 2)) * (Math.PI / 3);
-                this.position.y = paddle.position.y - this.radius - 1;
+                this.position.y = paddle.position.y - this.radius - 2;
             
-                if(collisionPoint > -paddle.width/2.5 && collisionPoint < paddle.width/2.5){
-                        this.vel.x -= paddle.vel / paddle.maxSpeed / 4;
-                        this.vel.y *= -1;     
+                if(collisionPoint > -paddle.width / 2.5 && collisionPoint < paddle.width / 2.5){
+                    if((this.vel.x > 0 && paddle.vel > 0) || (this.vel.x < 0 && paddle.vel < 0))
+                        this.vel.x += paddle.vel / paddle.maxSpeed / 4;
+                    else 
+                        this.vel.x -= paddle.vel / paddle.maxSpeed / 3;
+                    this.vel.y *= -1;     
                 } else{
                     this.vel.y = -this.speed *  Math.cos(collisionAngle); 
-                    this.vel.x = this.speed * Math.sin(collisionAngle) - (paddle.vel/paddle.maxSpeed/4);
+                    this.vel.x = this.speed * Math.sin(collisionAngle);
                 }
                 this.speed = this.getSpeed();
                 console.log(this.speed);
@@ -59,6 +64,9 @@ export default class Ball {
     reset () {
         this.position.x = this.game.width / 2 - this.radius - this.game.paddle.width/8;
         this.position.y = this.game.height - 12 - this.game.paddle.height - this.radius - 1;
+        this.vel.x = this.initialVelX;
+        this.vel.y = this.initialVelY;
+        this.speed = this.getSpeed();
     }
 
     getSpeed () {

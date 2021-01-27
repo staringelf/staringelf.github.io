@@ -1,4 +1,5 @@
-import {GAMESTATE} from './game.js';
+import {GAMESTATE, ORIENTATION} from './game.js';
+
 
 export default class InputHandler {
     constructor (game, paddle) {
@@ -19,7 +20,7 @@ export default class InputHandler {
                     break;
              }
 
-        })
+        });
 
         document.addEventListener('keyup', e => {
             switch (e.keyCode) {
@@ -28,6 +29,33 @@ export default class InputHandler {
                     paddle.stop();
                     break;
             }
-        })
+        });
+
+        document.addEventListener('click', e => {
+                if(game.state === GAMESTATE.MENU)
+                    game.start();
+                // if(game.state = GAMESTATE.RUNNING) {
+                //     // debugger;
+                //     if(e.offsetX < game.width/2){ 
+                //         paddle.moveLeft();
+                //     } 
+                //     else if (e.offsetX > game.width/2){
+                //         paddle.moveRight();
+                //     }
+                // }  
+            });
+        
+        if(game.orientation === ORIENTATION.PORTRAIT){
+            document.addEventListener ('mousedown', e=> {
+                if(game.state === GAMESTATE.RUNNING) {
+                    if(e.offsetX < game.width/2){ 
+                        paddle.moveLeft();
+                    } 
+                    else if (e.offsetX > game.width/2){
+                        paddle.moveRight();
+                    }
+                }
+            });
+        }   
     }
 }
