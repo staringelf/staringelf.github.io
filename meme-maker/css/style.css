@@ -29,7 +29,18 @@ body{
   position: relative;
 }
 
+.grid-center{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+
 @media screen and (max-width: 600px){
+  body{
+    display: block
+  }
+  
   .form_container{
     width: 95%;
     margin: 0 auto; 

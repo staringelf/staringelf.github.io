@@ -359,7 +359,14 @@ const canvasView = {
     const CANVAS_WIDTH = window.innerWidth < 550 ? .98 * window.innerWidth : 550;
     let CANVAS_HEIGHT = CANVAS_WIDTH;
     if (window.innerHeight - window.innerWidth > 300) {
-      CANVAS_HEIGHT = 1.33 * CANVAS_WIDTH;
+      CANVAS_HEIGHT = 1.1 * CANVAS_WIDTH;
+    }
+    if(window.innerWidth > 600) {
+      document.body.classList.add('grid--center');
+      document.body.innerHTML = `
+      <h2 class="grid-center">desktop Mode under construction</h2>
+      `
+      return;
     }
     this.saveButton = document.querySelector('#save-btn');
     this.canvas = this.createCanvas(CANVAS_HEIGHT, CANVAS_WIDTH);
