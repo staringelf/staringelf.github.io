@@ -1,0 +1,13 @@
+.hero{
+  background-image: url('../images/photos/romato/hero.jpg'), $linear-grad-x-y;
+  height: max(50vh, 400px);
+  display: grid;
+  place-items: center;
+  background-position: -200px 0;
+
+  &__box{
+    width: 90%;
+    margin: 0 auto;
+    color: $clr--white;
+  }
+}
