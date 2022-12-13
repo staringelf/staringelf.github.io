@@ -63,22 +63,22 @@ const model = {
       project: "Todo List",
       stack: ["react", "tailwind", "local-storage"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+        "A React.js todo list crafted using tailwind css and modern React.",
       website: "https://todo-list-flame-pi.vercel.app/",
       github: "https://github.com/staringelf/React-Todo-List",
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
-        features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
+        features: ["Utilizes React Hooks", "Built with elegance of tailwind CSS", "UI/UX"],
       status: "Live"
     },
     {
       project: "Meme Maker",
       stack: ["javascript", "canvas"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+        "A meme creator crafted using vanilla javaScript and HTML5 Canvas (MVC)",
       website: "https://staringelf.github.io/meme-maker",
       github: "https://github.com/staringelf/Meme-Maker",
-      features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
+      features: ["Utilizes HTML5 Canvas", "Upload picture, Add Text", "Download the meme created"],
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
       status: "Live"
@@ -87,22 +87,22 @@ const model = {
       project: "Weather App",
       stack: ["react", "apis"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+        "A React.js Weather App that utilizes React and open source APIs",
       website: "https://react-weather-app-six-phi.vercel.app/",
       github: "https://github.com/staringelf/React-Weather-App",
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
-        features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
-      status: "In Development"
+        features: ["Built with React", "Utilizes openWeatherDB and citiesDB"],
+      status: "Live"
     },
     {
       project: "React Cart Drawer",
       stack: ["react", "tailwind"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+        "A cart drawer that utilizes react, tailwind and localStorage Api",
       website: "http://react-drawer-seven.vercel.app/",
       github: "https://github.com/staringelf/React-Drawer",
-      features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
+      features: ["Collection Page Mockup", "Retains Memory", "Crafted with tailwind"],
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
       status: "Live"
@@ -111,10 +111,10 @@ const model = {
       project: "Catch The Insect",
       stack: ["javascript", "CSS"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+        "A catch the insect game (not quite!)",
       website: "http://apex-21india.github.io/insects",
-      github: "https://github.com/staringelf/React-Drawer",
-      features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
+      github: "https://github.com/apex-21india/apex-21india.github.io/tree/master/insects",
+      features: ["Uses raw CSS, JS", "Original Credit: Florin Pop"],
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
       status: "Live"
@@ -123,10 +123,10 @@ const model = {
       project: "Whack A Mole",
       stack: ["javascript", "CSS"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
-      website: "http://apex-21india.github.io/insects",
-      github: "https://github.com/staringelf/React-Drawer",
-      features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
+        "Classic Whack The Mole Game Returns in Web!",
+      website: "https://apex-21india.github.io/WhackAMole/",
+      github: "https://github.com/apex-21india/apex-21india.github.io/tree/master/WhackAMole",
+      features: ["Utilizes raw Javascript", "Uses CSS", "Completely Responsive in all screens"],
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
       status: "Live"
@@ -135,10 +135,10 @@ const model = {
       project: "Crazy Walls",
       stack: ["javascript", "CSS"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+        "",
       website: "http://apexindia.github.io/crazywalls",
-      github: "https://github.com/staringelf/React-Drawer",
-      features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
+      github: "https://github.com/apexindia/apexindia.github.io/tree/main/crazywalls",
+      features: ["Utlizes HTML, CSS, JS"],
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
       status: "Live"
@@ -147,10 +147,10 @@ const model = {
       project: "Apex India",
       stack: ["HTML", "CSS", "javascript"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+        "Website for local firm Apex India",
       website: "http://apexindia.github.io/",
-      github: "https://github.com/staringelf/apex-india",
-      features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
+      github: "https://github.com/apexindia/apexindia.github.io/",
+      features: ["Built with modern JS", "Generates HTML from json", "Includes working Contact Form"],
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
       status: "Live"
@@ -159,22 +159,22 @@ const model = {
       project: "Picture Book",
       stack: ["react", "node", "express", "redux", "mongoose"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+        "A fullstack javascript application using React.js, Node, Express, Mongoose, Redux and friends..",
       website: "",
-      github: "https://github.com/staringelf/apex-india",
-      features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
+      github: "",
+      features: ["A fullstack social media application", "Includes Authentication", "Currently In development"],
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
       status: "In development"
     },
     {
       project: "React Ecommerce",
-      stack: ["next", "react", "keystone", "node"],
+      stack: ["next", "react", "keystone", "node", "graphql"],
       description:
-        "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+        "A fullstack React application using Next.js, Keystone, Apollo Client, Graphql and friends..",
       website: "",
       github: "https://github.com/staringelf/arena-of-life",
-      features: ["A fullstack javascript application", "Includes A Rest API", "Completely Responsive in all screens"],
+      features: ["A Next.js Ecommerce web app", "Crafted with Graphql and tailwind", "Currently In development"],
       image:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
       status: "In development"

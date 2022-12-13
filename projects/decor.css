@@ -124,6 +124,7 @@ button {
   top: 100%;
   left: 0;
   height: 100%;
+  width: 100%;
   transition: .25s ease;
   overflow: auto;
   background-color: #fff;
