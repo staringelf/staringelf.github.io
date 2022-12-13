@@ -6,19 +6,31 @@
   margin: 0;
 }
 
-.project-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:  40px;
+body{
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5;
 }
 
-.project {
-  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
-  transition: .25s ease;
+.project__name {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.project:hover {
-  box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a[href="#"]{
+  display: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
 }
 
 img {
@@ -28,7 +40,35 @@ img {
   display: block;
 }
 
-.project__info {
+button {
+  background-color: #fff;
+  border: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:  40px;
+}
+
+.project {
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  transition: .25s ease;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.project:hover {
+  box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.project__image, .project__info, .project__details {
   padding: 20px;
 }
 
@@ -41,4 +81,123 @@ img {
 .section__title {
   margin-bottom: 40px;
   text-align: center;
+}
+
+.stack__item {
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  letter-spacing: .1px;
+  background: rgb(255, 167, 135);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.project__links {
+  display: flex;
+  gap: 5px;
+}
+
+.project__name {
+  margin-bottom: 5px;
+}
+
+.project__info .project__name{
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.project__block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__details{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  transition: .25s ease;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.project__link {
+  font-size: 14px;
+}
+
+.project__details-title{
+  margin-bottom: 4px;
+}
+
+.project__description {
+  margin-bottom: 10px;
+}
+
+.project__feature::before {
+  content: '-';
+  margin-right: 5px;
+}
+
+.project__status{
+  color: #7699C2;
+}
+
+.project__details-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 5px;
+}
+
+.project__link--website {
+  color: rgb(33, 148, 219);
+  color: #039be5;
+}
+
+.project__link--github {
+  color: rgb(29, 153, 29);
+}
+
+.stack__item--node{
+  background-color: #E1C1C1;
+}
+
+.stack__item--express{
+  background-color: #F2C986;
+}
+
+.stack__item--react{
+  background-color: #BAD5F5;
+}
+
+.stack__item--mongoose{
+  background-color: #ace4bd;
+}
+
+.stack__item--javascript{
+  background-color: #85d2f0;
+}
+
+.stack__item--tailwind{
+  background-color: #ffe5f3;
+}
+
+.-translate-Y-100{
+  transform: translateY(-100%);
+}
+
+.visually-hidden{
+  clip:rect(0, 0, 0, 0);
+  overflow:hidden;
+  position:absolute;
+  height:1px;
+  width:1px;
 }
